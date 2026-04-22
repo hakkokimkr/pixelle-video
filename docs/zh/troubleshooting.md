@@ -1,108 +1,108 @@
-# 故障排查
+# Troubleshooting
 
-遇到问题？这里有一些常见问题的解决方案。
+Having issues? Here are solutions to common problems.
 
 ---
 
-## 安装问题
+## Installation Issues
 
-### 依赖安装失败
+### Dependency installation failed
 
 ```bash
-# 清理缓存
+# Clean cache
 uv cache clean
 
-# 重新安装
+# Reinstall
 uv sync
 ```
 
 ---
 
-## 配置问题
+## Configuration Issues
 
-### ComfyUI 连接失败
+### ComfyUI connection failed
 
-**可能原因**:
-- ComfyUI 未运行
-- URL 配置错误
-- 防火墙阻止
+**Possible Causes**:
+- ComfyUI not running
+- Incorrect URL configuration
+- Firewall blocking
 
-**解决方案**:
-1. 确认 ComfyUI 正在运行
-2. 检查 URL 配置（默认 `http://127.0.0.1:8188`）
-3. 在浏览器中访问 ComfyUI 地址测试
-4. 检查防火墙设置
+**Solutions**:
+1. Confirm ComfyUI is running
+2. Check URL configuration (default `http://127.0.0.1:8188`)
+3. Test by accessing ComfyUI address in browser
+4. Check firewall settings
 
-### LLM API 调用失败
+### LLM API call failed
 
-**可能原因**:
-- API Key 错误
-- 网络问题
-- 余额不足
+**Possible Causes**:
+- Incorrect API Key
+- Network issues
+- Insufficient balance
 
-**解决方案**:
-1. 检查 API Key 是否正确
-2. 检查网络连接
-3. 查看错误提示中的具体原因
-4. 检查账户余额
-
----
-
-## 生成问题
-
-### 视频生成失败
-
-**可能原因**:
-- 工作流文件损坏
-- 模型未下载
-- 资源不足
-
-**解决方案**:
-1. 检查工作流文件是否存在
-2. 确认 ComfyUI 已下载所需模型
-3. 检查磁盘空间和内存
-
-### 图像生成失败
-
-**解决方案**:
-1. 检查 ComfyUI 是否正常运行
-2. 尝试在 ComfyUI 中手动测试工作流
-3. 检查工作流配置
-
-### TTS 生成失败
-
-**解决方案**:
-1. 检查 TTS 工作流是否正确
-2. 如使用声音克隆，检查参考音频格式
-3. 查看错误日志
+**Solutions**:
+1. Verify API Key is correct
+2. Check network connection
+3. Review error message details
+4. Check account balance
 
 ---
 
-## 性能问题
+## Generation Issues
 
-### 生成速度慢
+### Video generation failed
 
-**优化建议**:
-1. 使用本地 ComfyUI（比云端快）
-2. 减少分镜数量
-3. 使用更快的 LLM（如 Qianwen）
-4. 检查网络连接
+**Possible Causes**:
+- Corrupted workflow file
+- Models not downloaded
+- Insufficient resources
+
+**Solutions**:
+1. Check if workflow file exists
+2. Confirm ComfyUI has downloaded required models
+3. Check disk space and memory
+
+### Image generation failed
+
+**Solutions**:
+1. Check if ComfyUI is running properly
+2. Try manually testing workflow in ComfyUI
+3. Check workflow configuration
+
+### TTS generation failed
+
+**Solutions**:
+1. Check if TTS workflow is correct
+2. If using voice cloning, check reference audio format
+3. Review error logs
 
 ---
 
-## 其他问题
+## Performance Issues
 
-仍有问题？
+### Slow generation speed
 
-1. 查看项目 [GitHub Issues](https://github.com/AIDC-AI/Pixelle-Video/issues)
-2. 提交新的 Issue 描述你的问题
-3. 包含错误日志和配置信息以便快速定位
+**Optimization Tips**:
+1. Use local ComfyUI (faster than cloud)
+2. Reduce number of scenes
+3. Use faster LLM (e.g., Qianwen)
+4. Check network connection
 
 ---
 
-## 日志查看
+## Other Issues
 
-日志文件位于项目根目录：
-- `api_server.log` - API 服务日志
-- `test_output.log` - 测试日志
+Still having problems?
+
+1. Check project [GitHub Issues](https://github.com/AIDC-AI/Pixelle-Video/issues)
+2. Submit a new Issue describing your problem
+3. Include error logs and configuration details for quick diagnosis
+
+---
+
+## View Logs
+
+Log files are located in project root:
+- `api_server.log` - API service logs
+- `test_output.log` - Test logs
 

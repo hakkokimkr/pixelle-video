@@ -54,8 +54,8 @@ Requirements:
      * "early to bed and early to rise" → "Sleep Early" or "Early Habits"
      * "makes you healthy" → "for Health" or "Stay Healthy"
    - For Chinese:
-     * "10,000元" → "万元" or "1万"
-     * "每个月" → "月入" or "月收"
+     * "10,000 yuan" -> "10K yuan" or "1W"
+     * "every month" -> "monthly income" or "monthly earnings"
 
 7. Accurately summarize the core content
 8. Attractive and engaging, suitable as a video title

@@ -1,10 +1,10 @@
-# 配置文件详解
+# Config Schema
 
-`config.yaml` 配置文件的详细说明。
+Detailed explanation of the `config.yaml` configuration file.
 
 ---
 
-## 配置结构
+## Configuration Structure
 
 ```yaml
 llm:
@@ -14,10 +14,10 @@ llm:
 
 comfyui:
   comfyui_url: "http://127.0.0.1:8188"
-  comfyui_api_key: ""  # ComfyUI API 密钥（可选）
+  comfyui_api_key: ""  # ComfyUI API key (optional)
   runninghub_api_key: ""
-  runninghub_concurrent_limit: 1  # 并发限制 (1-10)
-  runninghub_instance_type: ""  # 实例类型（可选，设为 "plus" 使用 48GB 显存）
+  runninghub_concurrent_limit: 1  # Concurrent limit (1-10)
+  runninghub_instance_type: ""  # Instance type (optional, set to "plus" for 48GB VRAM)
   
   image:
     default_workflow: "runninghub/image_flux.json"
@@ -36,54 +36,54 @@ template:
 
 ---
 
-## LLM 配置
+## LLM Configuration
 
-- `api_key`: API 密钥
-- `base_url`: API 服务地址（支持任何 OpenAI 兼容接口）
-- `model`: 模型名称
-
----
-
-## ComfyUI 配置
-
-### 基础配置
-
-- `comfyui_url`: 本地 ComfyUI 地址（默认 `http://127.0.0.1:8188`）
-- `comfyui_api_key`: ComfyUI API 密钥（可选，用于 [Comfy Platform](https://platform.comfy.org/profile/api-keys)）
-
-### RunningHub 云端配置
-
-- `runninghub_api_key`: RunningHub API 密钥（使用云端工作流时必填）
-- `runninghub_concurrent_limit`: 并发执行限制（1-10，普通会员默认为 1）
-- `runninghub_instance_type`: 实例类型（可选）
-  - 留空或不设置：使用 24GB 显存机器
-  - `"plus"`: 使用 48GB 显存机器（适合大尺寸视频生成）
-
-### 图像配置
-
-- `default_workflow`: 默认图像生成工作流
-- `prompt_prefix`: 提示词前缀
-
-### 视频配置
-
-- `default_workflow`: 默认视频生成工作流
-  - `runninghub/video_wan2.1_fusionx.json`: 云端工作流（推荐，无需本地环境）
-  - `selfhost/video_wan2.1_fusionx.json`: 本地工作流（需要本地 ComfyUI 支持）
-- `prompt_prefix`: 视频提示词前缀（用于控制视频生成风格）
-
-### TTS 配置
-
-- `default_workflow`: 默认 TTS 工作流
+- `api_key`: API key
+- `base_url`: API service address (supports any OpenAI-compatible interface)
+- `model`: Model name
 
 ---
 
-## 模板配置
+## ComfyUI Configuration
 
-- `default_template`: 默认帧模板路径（例如 `1080x1920/image_default.html`）
+### Basic Configuration
+
+- `comfyui_url`: Local ComfyUI address (default `http://127.0.0.1:8188`)
+- `comfyui_api_key`: ComfyUI API key (optional, for [Comfy Platform](https://platform.comfy.org/profile/api-keys))
+
+### RunningHub Cloud Configuration
+
+- `runninghub_api_key`: RunningHub API key (required for cloud workflows)
+- `runninghub_concurrent_limit`: Concurrent execution limit (1-10, default 1 for regular members)
+- `runninghub_instance_type`: Instance type (optional)
+  - Empty or unset: Use 24GB VRAM machine
+  - `"plus"`: Use 48GB VRAM machine (suitable for large video generation)
+
+### Image Configuration
+
+- `default_workflow`: Default image generation workflow
+- `prompt_prefix`: Prompt prefix
+
+### Video Configuration
+
+- `default_workflow`: Default video generation workflow
+  - `runninghub/video_wan2.1_fusionx.json`: Cloud workflow (recommended, no local setup required)
+  - `selfhost/video_wan2.1_fusionx.json`: Local workflow (requires local ComfyUI support)
+- `prompt_prefix`: Video prompt prefix (controls video generation style)
+
+### TTS Configuration
+
+- `default_workflow`: Default TTS workflow
 
 ---
 
-## 更多信息
+## Template Configuration
 
-配置文件会自动在首次运行时创建。
+- `default_template`: Default frame template path (e.g., `1080x1920/image_default.html`)
+
+---
+
+## More Information
+
+The configuration file is automatically created on first run.
 

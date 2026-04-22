@@ -95,7 +95,7 @@ def render_single_output(pixelle_video, video_params):
                     """Update progress bar and status text from ProgressEvent"""
                     # Translate event to user-facing message
                     if event.event_type == "frame_step":
-                        # Frame step: "分镜 3/5 - 步骤 2/4: 生成插图"
+                        # Frame step: "Frame 3/5 - Step 2/4: Generating image"
                         action_key = f"progress.step_{event.action}"
                         action_text = tr(action_key)
                         message = tr(
@@ -106,7 +106,7 @@ def render_single_output(pixelle_video, video_params):
                             action=action_text
                         )
                     elif event.event_type == "processing_frame":
-                        # Processing frame: "分镜 3/5"
+                        # Processing frame: "Frame 3/5"
                         message = tr(
                             "progress.frame",
                             current=event.frame_current,
@@ -195,7 +195,7 @@ def render_single_output(pixelle_video, video_params):
                         video_bytes = video_file.read()
                         video_filename = os.path.basename(result.video_path)
                         st.download_button(
-                            label="⬇️ 下载视频" if get_language() == "zh_CN" else "⬇️ Download Video",
+                            label="⬇️ Download Video" if get_language() == "zh_CN" else "⬇️ Download Video",
                             data=video_bytes,
                             file_name=video_filename,
                             mime="video/mp4",

@@ -302,7 +302,7 @@ class DigitalHumanPipelineUI(PipelineUI):
             logger.info(f"🔧 The obtained TTS parameters:")
             logger.info(f"  - tts_voice: {tts_voice}")
             logger.info(f"  - tts_speed: {tts_speed}")
-            logger.info(f"  - video_params中的tts_voice: {video_params.get('tts_voice', 'NOT_FOUND')}")
+            logger.info(f"  - tts_voice in video_params: {video_params.get('tts_voice', 'NOT_FOUND')}")
             logger.info(f"  - video_params: {video_params}")
             
             # Validation
@@ -653,7 +653,7 @@ class DigitalHumanPipelineUI(PipelineUI):
                             video_bytes = video_file.read()
                             video_filename = os.path.basename(final_video_path)
                             st.download_button(
-                                label="⬇️ 下载视频" if get_language() == "zh_CN" else "⬇️ Download Video",
+                                label="⬇️ Download Video" if get_language() == "zh_CN" else "⬇️ Download Video",
                                 data=video_bytes,
                                 file_name=video_filename,
                                 mime="video/mp4",

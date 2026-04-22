@@ -1,134 +1,134 @@
-# 安装
+# Installation
 
-本页面将指导你完成 Pixelle-Video 的安装。
-
----
-
-## 系统要求
-
-### 必需条件
-
-- **Python**: 3.10 或更高版本
-- **操作系统**: Windows、macOS 或 Linux
-- **包管理器**: uv（推荐）或 pip
-
-### 可选条件
-
-- **GPU**: 如需本地运行 ComfyUI，建议配备 NVIDIA 显卡（6GB+ 显存）
-- **网络**: 稳定的网络连接（用于调用 LLM API 和图像生成服务）
+This page will guide you through installing Pixelle-Video.
 
 ---
 
-## 🪟 Windows 一键整合包（推荐 Windows 用户使用）
+## System Requirements
 
-**无需安装 Python、uv 或 ffmpeg，一键开箱即用！**
+### Required
 
-### 下载和安装
+- **Python**: 3.10 or higher
+- **Operating System**: Windows, macOS, or Linux
+- **Package Manager**: uv (recommended) or pip
 
-1. 访问 [GitHub Releases](https://github.com/AIDC-AI/Pixelle-Video/releases/latest) 下载最新版本
-2. 下载最新的 Windows 一键整合包并解压到任意目录
-3. 双击运行 `start.bat` 启动 Web 界面
-4. 浏览器会自动打开 `http://localhost:8501`
+### Optional
 
-!!! success "安装完成！"
-    整合包已包含所有依赖，无需手动安装任何环境。首次使用只需在「⚙️ 系统配置」中配置 API 密钥即可开始使用。
-
-!!! tip "下一步"
-    安装完成后，请查看 [配置说明](configuration.md) 来设置 LLM 和图像生成服务，然后查看 [快速开始](quick-start.md) 生成第一个视频。
+- **GPU**: NVIDIA GPU with 6GB+ VRAM recommended for local ComfyUI
+- **Network**: Stable internet connection for LLM API and image generation services
 
 ---
 
-## 从源码安装（适合 macOS / Linux 用户或需要自定义的用户）
+## 🪟 Windows All-in-One Package (Recommended for Windows Users)
 
-### 第一步：克隆项目
+**No need to install Python, uv, or ffmpeg - ready to use out of the box!**
+
+### Download and Install
+
+1. Visit [GitHub Releases](https://github.com/AIDC-AI/Pixelle-Video/releases/latest) to download the latest version
+2. Download the latest Windows All-in-One Package and extract it to any directory
+3. Double-click `start.bat` to launch the Web interface
+4. Your browser will automatically open `http://localhost:8501`
+
+!!! success "Installation Complete!"
+    The package includes all dependencies, no need to manually install any environment. On first use, you only need to configure API keys in "⚙️ System Configuration" to get started.
+
+!!! tip "Next Steps"
+    After installation, check out the [Configuration Guide](configuration.md) to set up LLM and image generation services, then see [Quick Start](quick-start.md) to create your first video.
+
+---
+
+## Install from Source (For macOS / Linux Users or Users Who Need Customization)
+
+### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/AIDC-AI/Pixelle-Video.git
 cd Pixelle-Video
 ```
 
-### 第二步：安装依赖
+### Step 2: Install Dependencies
 
-!!! tip "推荐使用 uv"
-    本项目使用 `uv` 作为包管理器，它比传统的 pip 更快、更可靠。
+!!! tip "Recommended: Use uv"
+    This project uses `uv` as the package manager, which is faster and more reliable than traditional pip.
 
-#### 使用 uv（推荐）
+#### Using uv (Recommended)
 
 ```bash
-# 如果还没有安装 uv，先安装它
+# Install uv if you haven't already
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# 安装项目依赖（uv 会自动创建虚拟环境）
+# Install project dependencies (uv will create a virtual environment automatically)
 uv sync
 ```
 
-#### 使用 pip
+#### Using pip
 
 ```bash
-# 创建虚拟环境
+# Create virtual environment
 python -m venv venv
 
-# 激活虚拟环境
+# Activate virtual environment
 # Windows:
 venv\Scripts\activate
 # macOS/Linux:
 source venv/bin/activate
 
-# 安装依赖
+# Install dependencies
 pip install -e .
 ```
 
 ---
 
-## 验证安装
+## Verify Installation
 
-运行以下命令验证安装是否成功：
+Run the following command to verify the installation:
 
 ```bash
-# 使用 uv
+# Using uv
 uv run streamlit run web/app.py
 
-# 或使用 pip（需先激活虚拟环境）
+# Or using pip (activate virtual environment first)
 streamlit run web/app.py
 ```
 
-浏览器应该会自动打开 `http://localhost:8501`，显示 Pixelle-Video 的 Web 界面。
+Your browser should automatically open `http://localhost:8501` and display the Pixelle-Video web interface.
 
-!!! success "安装成功！"
-    如果能看到 Web 界面，说明安装成功了！接下来请查看 [配置说明](configuration.md) 来设置服务。
+!!! success "Installation Successful!"
+    If you can see the web interface, the installation was successful! Next, check out the [Configuration Guide](configuration.md) to set up your services.
 
 ---
 
-## 可选：安装 ComfyUI（本地部署）
+## Optional: Install ComfyUI (Local Deployment)
 
-如果希望本地运行图像生成服务，需要安装 ComfyUI：
+If you want to run image generation locally, you'll need to install ComfyUI:
 
-### 快速安装
+### Quick Install
 
 ```bash
-# 克隆 ComfyUI
+# Clone ComfyUI
 git clone https://github.com/comfyanonymous/ComfyUI.git
 cd ComfyUI
 
-# 安装依赖
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-### 启动 ComfyUI
+### Start ComfyUI
 
 ```bash
 python main.py
 ```
 
-ComfyUI 默认运行在 `http://127.0.0.1:8188`
+ComfyUI runs on `http://127.0.0.1:8188` by default.
 
-!!! info "ComfyUI 模型"
-    ComfyUI 需要下载对应的模型文件才能工作。请参考 [ComfyUI 官方文档](https://github.com/comfyanonymous/ComfyUI) 了解如何下载和配置模型。
+!!! info "ComfyUI Models"
+    ComfyUI requires downloading model files to work. Please refer to the [ComfyUI documentation](https://github.com/comfyanonymous/ComfyUI) for information on downloading and configuring models.
 
 ---
 
-## 下一步
+## Next Steps
 
-- [配置服务](configuration.md) - 配置 LLM 和图像生成服务
-- [快速开始](quick-start.md) - 生成第一个视频
+- [Configuration](configuration.md) - Configure LLM and image generation services
+- [Quick Start](quick-start.md) - Create your first video
 

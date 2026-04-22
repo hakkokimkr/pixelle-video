@@ -1,69 +1,69 @@
-# 工作流定制
+# Workflow Customization
 
-如何自定义 ComfyUI 工作流以实现特定功能。
-
----
-
-## 工作流简介
-
-Pixelle-Video 基于 ComfyUI 架构，支持自定义工作流。
+How to customize ComfyUI workflows to achieve specific functionality.
 
 ---
 
-## 工作流类型
+## Workflow Introduction
 
-### TTS 工作流
+Pixelle-Video is built on the ComfyUI architecture and supports custom workflows.
 
-位于 `workflows/selfhost/` 或 `workflows/runninghub/`
+---
 
-用于文本转语音（Text-to-Speech），支持多种 TTS 引擎：
+## Workflow Types
+
+### TTS Workflows
+
+Located in `workflows/selfhost/` or `workflows/runninghub/`
+
+Used for Text-to-Speech, supporting various TTS engines:
 - Edge-TTS
-- Index-TTS（支持声音克隆）
-- 其他 ComfyUI 兼容的 TTS 节点
+- Index-TTS (supports voice cloning)
+- Other ComfyUI-compatible TTS nodes
 
-### 图像生成工作流
+### Image Generation Workflows
 
-位于 `workflows/selfhost/` 或 `workflows/runninghub/`
+Located in `workflows/selfhost/` or `workflows/runninghub/`
 
-用于生成静态图像作为视频背景：
-- FLUX 系列模型
-- Stable Diffusion 系列模型
-- 其他图像生成模型
+Used for generating static images as video backgrounds:
+- FLUX series models
+- Stable Diffusion series models
+- Other image generation models
 
-### 视频生成工作流
+### Video Generation Workflows
 
-位于 `workflows/selfhost/` 或 `workflows/runninghub/`
+Located in `workflows/selfhost/` or `workflows/runninghub/`
 
-**新功能**：支持 AI 视频生成，创建动态视频内容。
+**New Feature**: Supports AI video generation to create dynamic video content.
 
-**预置工作流**：
-- `runninghub/video_wan2.1_fusionx.json`: 云端工作流（推荐）
-  - 基于 WAN 2.1 模型
-  - 无需本地环境，通过 RunningHub API 调用
-  - 支持文本到视频（Text-to-Video）
+**Preset Workflows**:
+- `runninghub/video_wan2.1_fusionx.json`: Cloud workflow (recommended)
+  - Based on WAN 2.1 model
+  - No local setup required, accessed via RunningHub API
+  - Supports Text-to-Video generation
   
-- `selfhost/video_wan2.1_fusionx.json`: 本地工作流
-  - 需要本地 ComfyUI 环境
-  - 需要安装相应的视频生成节点
-  - 适合有本地 GPU 的用户
+- `selfhost/video_wan2.1_fusionx.json`: Local workflow
+  - Requires local ComfyUI environment
+  - Requires installation of corresponding video generation nodes
+  - Suitable for users with local GPU
 
-**使用场景**：
-- 配合 `video_*.html` 模板使用
-- 自动根据文案生成动态视频背景
-- 增强视频的视觉表现力和观看体验
-
----
-
-## 自定义工作流
-
-1. 在 ComfyUI 中设计你的工作流
-2. 导出为 JSON 文件
-3. 放置到 `workflows/` 目录
-4. 在 Web 界面中选择使用
+**Use Cases**:
+- Works with `video_*.html` templates
+- Automatically generates dynamic video backgrounds based on scripts
+- Enhances visual expressiveness and viewing experience
 
 ---
 
-## 更多信息
+## Custom Workflows
 
-即将推出更详细的工作流定制指南。
+1. Design your workflow in ComfyUI
+2. Export as JSON file
+3. Place in `workflows/` directory
+4. Select and use in Web interface
+
+---
+
+## More Information
+
+Detailed workflow customization guide coming soon.
 

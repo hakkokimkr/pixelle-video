@@ -1,20 +1,20 @@
-# 模板开发
+# Template Development
 
-如何创建自定义视频模板。
-
----
-
-## 模板简介
-
-视频模板使用 HTML 定义视频画面的布局和样式。Pixelle-Video 提供了多种预设模板，覆盖不同的视频尺寸和风格需求。
+How to create custom video templates.
 
 ---
 
-## 内置模板预览
+## Template Introduction
 
-### 竖屏模板 (1080x1920)
+Video templates use HTML to define the layout and style of video frames. Pixelle-Video provides multiple preset templates covering different video dimensions and style requirements.
 
-适用于抖音、快手、小红书等短视频平台。
+---
+
+## Built-in Template Preview
+
+### Portrait Templates (1080x1920)
+
+Suitable for TikTok, Kuaishou, Xiaohongshu, and other short video platforms.
 
 <div class="grid cards" markdown>
 
@@ -22,177 +22,177 @@
 
     ---
 
-    ![static_default](../../images/1080x1920/static_default.jpg)
+    ![static_default](../../images/1080x1920/static_default_en.jpg)
     
-    默认静态模板
+    Default static template
 
 -   **static_excerpt**
 
     ---
 
-    ![static_excerpt](../../images/1080x1920/static_excerpt.jpg)
+    ![static_excerpt](../../images/1080x1920/static_excerpt_en.jpg)
     
-    图文摘抄静态模板
+    Text excerpt static template
 
 -   **Blur Card**
 
     ---
 
-    ![blur_card](../../images/1080x1920/image_blur_card.png)
+    ![blur_card](../../images/1080x1920/image_blur_card_en.jpg)
     
-    模糊背景卡片风格，适合图文内容展示
+    Blurred background card style, suitable for graphic content display
 
 -   **Cartoon**
 
     ---
 
-    ![cartoon](../../images/1080x1920/image_cartoon.png)
+    ![cartoon](../../images/1080x1920/image_cartoon_en.jpg)
     
-    卡通风格，适合轻松活泼的内容
+    Cartoon style, suitable for light and lively content
 
 -   **Default**
 
     ---
 
-    ![default](../../images/1080x1920/image_default.jpg)
+    ![default](../../images/1080x1920/image_default_en.jpg)
     
-    默认模板，简洁通用
+    Default template, simple and versatile
 
 -   **Elegant**
 
     ---
 
-    ![elegant](../../images/1080x1920/image_elegant.jpg)
+    ![elegant](../../images/1080x1920/image_elegant_en.jpg)
     
-    优雅风格，适合文艺、知性内容
+    Elegant style, suitable for artistic and intellectual content
 
 -   **Fashion Vintage**
 
     ---
 
-    ![fashion_vintage](../../images/1080x1920/image_fashion_vintage.jpg)
+    ![fashion_vintage](../../images/1080x1920/image_fashion_vintage_en.jpg)
     
-    复古时尚风格，适合怀旧主题
+    Retro fashion style, suitable for nostalgic themes
 
 -   **Life Insights**
 
     ---
 
-    ![life_insights](../../images/1080x1920/image_life_insights.jpg)
+    ![life_insights](../../images/1080x1920/image_life_insights_en.jpg)
     
-    生活感悟风格，适合心灵鸡汤类内容
+    Life insight style, suitable for inspirational content
 
 -   **Modern**
 
     ---
 
-    ![modern](../../images/1080x1920/image_modern.jpg)
+    ![modern](../../images/1080x1920/image_modern_en.jpg)
     
-    现代简约风格，适合商务、科技内容
+    Modern minimalist style, suitable for business and tech content
 
 -   **Neon**
 
     ---
 
-    ![neon](../../images/1080x1920/image_neon.jpg)
+    ![neon](../../images/1080x1920/image_neon_en.jpg)
     
-    霓虹灯风格，适合时尚、潮流内容
+    Neon style, suitable for fashion and trendy content
 
 -   **Psychology Card**
 
     ---
 
-    ![psychology_card](../../images/1080x1920/image_psychology_card.jpg)
+    ![psychology_card](../../images/1080x1920/image_psychology_card_en.jpg)
     
-    心理学卡片风格，适合知识科普
+    Psychology card style, suitable for knowledge popularization
 
 -   **Purple**
 
     ---
 
-    ![purple](../../images/1080x1920/image_purple.jpg)
+    ![purple](../../images/1080x1920/image_purple_en.jpg)
     
-    紫色主题，适合梦幻、神秘风格
+    Purple theme, suitable for dreamy and mysterious styles
 
 -   **Satirical Cartoon**
 
     ---
 
-    ![satirical_cartoon](../../images/1080x1920/image_satirical_cartoon.jpg)
+    ![satirical_cartoon](../../images/1080x1920/image_satirical_cartoon_en.jpg)
     
-    80年代讽刺漫画风格，适合精神类小故事
+    80s satirical cartoon style for spiritual tales
 
 -   **Simple Black Background**
 
     ---
 
-    ![simple_black](../../images/1080x1920/image_simple_black.jpg)
+    ![simple_black](../../images/1080x1920/image_simple_black_en.jpg)
     
-    极简黑色背景，适合心灵鸡汤类内容
+    Simple black background, suitable for inspirational content
 
 -   **Simple Line Drawing**
 
     ---
 
-    ![simple_line_drawing](../../images/1080x1920/image_simple_line_drawing.jpg)
+    ![simple_line_drawing](../../images/1080x1920/image_simple_line_drawing_en.jpg)
     
-    简笔画，适合认知成长类内容
+    Simple line drawing style for cognitive growth content
 
 -   **Book**
 
     ---
 
-    ![book](../../images/1080x1920/image_book.jpg)
+    ![book](../../images/1080x1920/image_book_en.jpg)
     
-    图书解读，适合科普类内容
+    Book style, suitable for book lists
 
 -   **Long Text**
 
     ---
 
-    ![long_text](../../images/1080x1920/image_long_text.jpg)
+    ![long_text](../../images/1080x1920/image_long_text_en.jpg)
     
-    长文本，适合励志鸡汤类内容
+    Long text style, suitable for inspirational content
 
 -   **Excerpt**
 
     ---
 
-    ![excerpt](../../images/1080x1920/image_excerpt.jpg)
+    ![excerpt](../../images/1080x1920/image_excerpt_en.jpg)
     
-    图文摘抄，适合图文摘抄，名人名言
+    Excerpt style, suitable for quotes and book excerpts
 
 -   **Health Preservation**
 
     ---
 
-    ![health_preservation](../../images/1080x1920/image_health_preservation.jpg)
+    ![health_preservation](../../images/1080x1920/image_health_preservation_en.jpg)
     
-    养生窍门，适合养生科普内容
+    Health preserving tips, suitable for wellness explainers.
 
 -   **Life Insights**
 
     ---
 
-    ![life_insights_light](../../images/1080x1920/image_life_insights_light.jpg)
+    ![life_insights_light](../../images/1080x1920/image_life_insights_light_en.jpg)
     
-    人生感悟，传递温暖与力量
+    Life insights, conveying warmth and strength
 
 -   **Full**
 
     ---
 
-    ![full](../../images/1080x1920/image_full.jpg)
+    ![full](../../images/1080x1920/image_full_en.jpg)
     
-    全屏模版，适合书单号
+    Full screen display, suitable for book lists
 
 -   **Healing**
 
     ---
 
-    ![healing](../../images/1080x1920/image_healing.jpg)
+    ![healing](../../images/1080x1920/image_healing_en.jpg)
     
-    治愈模版，适合疗愈类内容
+    Healing style, suitable for therapeutic content
 
 -   **Video_Default**
 
@@ -200,7 +200,7 @@
 
     ![video_default](../../images/1080x1920/video_default.jpg)
     
-    默认动态模版
+    Default dynamic template
 
 -   **Video_Healing**
 
@@ -208,14 +208,15 @@
 
     ![video_healing](../../images/1080x1920/video_healing.jpg)
     
-    治愈动态模版
+    Healing dynamic template
+
 </div>
 
 ---
 
-### 横屏模板 (1920x1080)
+### Landscape Templates (1920x1080)
 
-适用于 YouTube、B站等视频平台。
+Suitable for YouTube, Bilibili, and other video platforms.
 
 <div class="grid cards" markdown>
 
@@ -223,48 +224,49 @@
 
     ---
 
-    ![ultrawide_minimal](../../images/1920x1080/image_ultrawide_minimal.jpg)
+    ![ultrawide_minimal](../../images/1920x1080/image_ultrawide_minimal_en.jpg)
     
-    超宽屏极简风格，适合桌面端观看
+    Ultrawide minimalist style, suitable for desktop viewing
 
 -   **Wide Darktech**
 
     ---
 
-    ![wide_darktech](../../images/1920x1080/image_wide_darktech.jpg)
+    ![wide_darktech](../../images/1920x1080/image_wide_darktech_en.jpg)
     
-    暗黑科技风格，适合技术、游戏内容
+    Dark tech style, suitable for technology and gaming content
 
 -   **Film**
 
     ---
 
-    ![film](../../images/1920x1080/image_film.jpg)
+    ![film](../../images/1920x1080/image_film_en.jpg)
     
-    电影风格，沉浸式体验
+    Film style, immersive experience
 
 -   **Full**
 
     ---
 
-    ![full](../../images/1920x1080/image_full.jpg)
+    ![full](../../images/1920x1080/image_full_en.jpg)
     
-    全屏显示，适合书单号
+    Full screen display, suitable for book lists
 
 -   **Book**
 
     ---
 
-    ![book](../../images/1920x1080/image_book.jpg)
+    ![book](../../images/1920x1080/image_book_en.jpg)
     
-    图书解读，适合科普类内容
+    Book style, suitable for book lists
+
 </div>
 
 ---
 
-### 方形模板 (1080x1080)
+### Square Templates (1080x1080)
 
-适用于 Instagram、微信朋友圈等平台。
+Suitable for Instagram, WeChat Moments, and other platforms.
 
 <div class="grid cards" markdown>
 
@@ -272,69 +274,69 @@
 
     ---
 
-    ![minimal_framed](../../images/1080x1080/image_minimal_framed.jpg)
+    ![minimal_framed](../../images/1080x1080/image_minimal_framed_en.jpg)
     
-    极简边框风格，适合社交媒体分享
+    Minimalist framed style, suitable for social media sharing
 
 </div>
 
 ---
 
-## 模板命名规范
+## Template Naming Convention
 
-模板采用统一的命名规范来区分不同类型：
+Templates follow a unified naming convention to distinguish different types:
 
-- **`static_*.html`**: 静态模板
-  - 无需 AI 生成任何媒体内容
-  - 纯文字样式渲染
-  - 适合快速生成、低成本场景
+- **`static_*.html`**: Static templates
+  - No AI-generated media content required
+  - Pure text style rendering
+  - Suitable for quick generation and low-cost scenarios
 
-- **`image_*.html`**: 图片模板
-  - 使用 AI 生成的图片作为背景
-  - 调用 ComfyUI 的图像生成工作流
-  - 适合需要视觉配图的内容
+- **`image_*.html`**: Image templates
+  - Uses AI-generated images as background
+  - Invokes ComfyUI image generation workflows
+  - Suitable for content requiring visual illustrations
 
-- **`video_*.html`**: 视频模板
-  - 使用 AI 生成的视频作为背景
-  - 调用 ComfyUI 的视频生成工作流
-  - 创建动态视频内容，增强表现力
+- **`video_*.html`**: Video templates
+  - Uses AI-generated videos as background
+  - Invokes ComfyUI video generation workflows
+  - Creates dynamic video content with enhanced expressiveness
 
-## 模板结构
+## Template Structure
 
-模板位于 `templates/` 目录，按尺寸分组：
+Templates are located in the `templates/` directory, grouped by size:
 
 ```
 templates/
-├── 1080x1920/  # 竖屏
-│   ├── static_*.html   # 静态模板
-│   ├── image_*.html    # 图片模板
-│   └── video_*.html    # 视频模板
-├── 1920x1080/  # 横屏
-│   └── image_*.html    # 图片模板
-└── 1080x1080/  # 方形
-    └── image_*.html    # 图片模板
+├── 1080x1920/  # Portrait
+│   ├── static_*.html   # Static templates
+│   ├── image_*.html    # Image templates
+│   └── video_*.html    # Video templates
+├── 1920x1080/  # Landscape
+│   └── image_*.html    # Image templates
+└── 1080x1080/  # Square
+    └── image_*.html    # Image templates
 ```
 
 ---
 
-## 创建自定义模板
+## Creating Custom Templates
 
-### 步骤
+### Steps
 
-1. 从 `templates/` 目录复制一个现有模板文件
-2. 修改 HTML 和 CSS 样式
-3. 保存到对应尺寸目录下，使用 `.html` 扩展名
-4. 在配置或 Web 界面中使用新模板名称
+1. Copy an existing template file from the `templates/` directory
+2. Modify HTML and CSS styles
+3. Save to the corresponding size directory with `.html` extension
+4. Use the new template name in configuration or Web interface
 
-### 模板变量
+### Template Variables
 
-模板支持以下 Jinja2 变量：
+Templates support the following Jinja2 variables:
 
-- `{{ title }}` - 视频标题（可选）
-- `{{ text }}` - 当前分镜的文本内容
-- `{{ image }}` - 当前分镜的图片（如果有）
+- `{{ title }}` - Video title (optional)
+- `{{ text }}` - Current scene text content
+- `{{ image }}` - Current scene image (if any)
 
-### 示例模板
+### Example Template
 
 ```html
 <!DOCTYPE html>
@@ -372,37 +374,37 @@ templates/
 
 ---
 
-## 模板开发技巧
+## Template Development Tips
 
-### 1. 响应式尺寸
+### 1. Responsive Sizing
 
-确保模板的 `body` 尺寸与目标视频尺寸一致：
+Ensure the template's `body` size matches the target video dimensions:
 
-- 竖屏：`width: 1080px; height: 1920px;`
-- 横屏：`width: 1920px; height: 1080px;`
-- 方形：`width: 1080px; height: 1080px;`
+- Portrait: `width: 1080px; height: 1920px;`
+- Landscape: `width: 1920px; height: 1080px;`
+- Square: `width: 1080px; height: 1080px;`
 
-### 2. 文本排版
+### 2. Text Typography
 
-- 使用合适的字体大小和行高，确保可读性
-- 为文字添加阴影或背景，提高对比度
-- 控制文本长度，避免溢出
+- Use appropriate font sizes and line heights for readability
+- Add shadows or backgrounds to text for better contrast
+- Control text length to avoid overflow
 
-### 3. 图片处理
+### 3. Image Handling
 
-- 使用 `object-fit: cover` 确保图片填充
-- 添加渐变或遮罩层，提升文字可读性
-- 考虑图片加载失败的降级方案
+- Use `object-fit: cover` to ensure image filling
+- Add gradients or overlay layers to improve text readability
+- Consider fallback solutions for image loading failures
 
-### 4. 性能优化
+### 4. Performance Optimization
 
-- 避免使用过于复杂的 CSS 动画
-- 优化背景图片大小
-- 使用系统字体或 Web 安全字体
+- Avoid overly complex CSS animations
+- Optimize background image sizes
+- Use system fonts or web-safe fonts
 
 ---
 
-## 更多信息
+## More Information
 
-如有模板开发相关问题，欢迎在 [GitHub Issues](https://github.com/AIDC-AI/Pixelle-Video/issues) 中提问。
+For template development questions, feel free to ask in [GitHub Issues](https://github.com/AIDC-AI/Pixelle-Video/issues).
 
