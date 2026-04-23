@@ -1,98 +1,98 @@
-# Web 界面使用指南
+# Web UI Guide
 
-详细介绍 Pixelle-Video Web 界面的各项功能。
-
----
-
-## 界面布局
-
-Web 界面采用三栏布局：
-
-- **左侧栏**: 内容输入与音频设置
-- **中间栏**: 语音与视觉设置  
-- **右侧栏**: 视频生成与预览
-- **侧边栏**: 系统配置与 FAQ
+Detailed introduction to the Pixelle-Video Web interface features.
 
 ---
 
-## 系统配置
+## Interface Layout
 
-首次使用需要配置 LLM 和图像生成服务。详见 [配置说明](../getting-started/configuration.md)。
+The Web interface uses a three-column layout:
 
----
-
-## 内容输入
-
-### 生成模式
-
-- **AI 生成内容**: 输入主题，AI 自动创作文案
-- **固定文案内容**: 直接输入完整文案
-
-### 固定文案分割方式
-
-使用固定文案模式时，可选择文案的分割方式：
-
-- **按段落分割**: 以空行为分隔符，每个段落作为一个分镜
-- **按行分割**: 以换行符为分隔符，每行作为一个分镜
-- **按句子分割**: 智能识别句子边界，每句话作为一个分镜
-
-### 背景音乐
-
-- 支持内置音乐
-- 支持自定义音乐文件
+- **Left Panel**: Content input and audio settings
+- **Middle Panel**: Voice and visual settings  
+- **Right Panel**: Video generation and preview
+- **Sidebar**: System configuration and FAQ
 
 ---
 
-## 语音设置
+## System Configuration
 
-### TTS 工作流
-
-- 选择 TTS 工作流
-- 支持 Edge-TTS、Index-TTS 等
-
-### 参考音频
-
-- 上传参考音频进行声音克隆
-- 支持 MP3/WAV/FLAC 等格式
+First-time use requires configuring LLM and image generation services. See [Configuration Guide](../getting-started/configuration.md).
 
 ---
 
-## 视觉设置
+## Content Input
 
-### 图像/视频生成
+### Generation Mode
 
-- 选择媒体生成工作流（图像或视频）
-- 调整提示词前缀控制风格
+- **AI Generate Content**: Enter a topic, AI creates script automatically
+- **Fixed Script Content**: Enter complete script directly
 
-### 视频模板
+### Fixed Script Split Mode
 
-- **模板预览画廊**: 可视化预览所有可用模板
-- 支持竖屏 (1080x1920) / 横屏 (1920x1080) / 方形 (1080x1080)
-- 模板类型：
-  - `static_*.html`: 静态模板（无 AI 生成媒体）
-  - `image_*.html`: 图像模板（需要 AI 生成图像）
-  - `video_*.html`: 视频模板（需要 AI 生成视频）
+When using fixed script mode, you can choose how to split the content:
+
+- **By Paragraph**: Split by empty lines, each paragraph becomes a scene
+- **By Line**: Split by line breaks, each line becomes a scene
+- **By Sentence**: Smart sentence boundary detection, each sentence becomes a scene
+
+### Background Music
+
+- Built-in music supported
+- Custom music files supported
 
 ---
 
-## 生成视频
+## Voice Settings
 
-点击「生成视频」按钮后，系统会：
+### TTS Workflow
 
-1. 生成视频文案
-2. 为每个分镜生成配图/视频
-3. 合成语音解说
-4. 合成最终视频
+- Select TTS workflow
+- Supports Edge-TTS, Index-TTS, etc.
 
-生成完成后自动预览。
+### Reference Audio
+
+- Upload reference audio for voice cloning
+- Supports MP3/WAV/FLAC formats
+
+---
+
+## Visual Settings
+
+### Image/Video Generation
+
+- Select media generation workflow (image or video)
+- Adjust prompt prefix to control style
+
+### Video Template
+
+- **Template Preview Gallery**: Visually preview all available templates
+- Supports portrait (1080x1920) / landscape (1920x1080) / square (1080x1080)
+- Template types:
+  - `static_*.html`: Static templates (no AI-generated media)
+  - `image_*.html`: Image templates (requires AI-generated images)
+  - `video_*.html`: Video templates (requires AI-generated videos)
+
+---
+
+## Generate Video
+
+After clicking "Generate Video", the system will:
+
+1. Generate video script
+2. Generate images/videos for each scene
+3. Synthesize voice narration
+4. Compose final video
+
+Automatically previews when complete.
 
 ---
 
 ## FAQ
 
-侧边栏内置了常见问题解答（FAQ），点击可快速查看：
+The sidebar includes built-in FAQ for quick reference:
 
-- 常见配置问题
-- 生成失败解决方案
-- 性能优化建议
+- Common configuration issues
+- Generation failure solutions
+- Performance optimization tips
 

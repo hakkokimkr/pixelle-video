@@ -1,115 +1,115 @@
-# 快速开始
+# Quick Start
 
-已经完成安装和配置？让我们生成第一个视频吧！
+Already installed and configured? Let's create your first video!
 
 ---
 
-## 启动 Web 界面
+## Start the Web Interface
 
-### Windows 一键整合包用户
+### Windows All-in-One Package Users
 
-如果你使用的是 Windows 一键整合包，只需：
-1. 双击运行 `start.bat`
-2. 浏览器会自动打开 `http://localhost:8501`
+If you're using the Windows All-in-One Package, simply:
+1. Double-click `start.bat`
+2. Your browser will automatically open `http://localhost:8501`
 
-### 从源码安装用户
+### Install from Source Users
 
 ```bash
-# 使用 uv 运行
+# Using uv
 uv run streamlit run web/app.py
 ```
 
-浏览器会自动打开 `http://localhost:8501`
+Your browser will automatically open `http://localhost:8501`
 
 ---
 
-## 生成你的第一个视频
+## Create Your First Video
 
-### 步骤一：检查配置
+### Step 1: Check Configuration
 
-首次使用时，展开「⚙️ 系统配置」面板，确认已配置：
+On first use, expand the「⚙️ System Configuration」panel and confirm:
 
-- **LLM 配置**: 选择 AI 模型（如通义千问、GPT 等）并填入 API Key
-- **图像配置**: 配置 ComfyUI 地址或 RunningHub API Key
+- **LLM Configuration**: Select an AI model (e.g., Qianwen, GPT) and enter API Key
+- **Image Configuration**: Configure ComfyUI address or RunningHub API Key
 
-如果还没有配置，请查看 [配置说明](configuration.md)。
+If not yet configured, see the [Configuration Guide](configuration.md).
 
-配置好后点击「保存配置」。
+Click "Save Configuration" when done.
 
 ---
 
-### 步骤二：输入主题
+### Step 2: Enter a Topic
 
-在左侧栏的「📝 内容输入」区域：
+In the left panel's「📝 Content Input」section:
 
-1. 选择「**AI 生成内容**」模式
-2. 在文本框中输入一个主题，例如：
+1. Select「**AI Generate Content**」mode
+2. Enter a topic in the text box, for example:
    ```
-   为什么要养成阅读习惯
+   Why develop a reading habit
    ```
-3. （可选）设置场景数量，默认 5 个分镜
+3. (Optional) Set number of scenes, default is 5 frames
 
-!!! tip "主题示例"
-    - 为什么要养成阅读习惯
-    - 如何提高工作效率
-    - 健康饮食的重要性
-    - 旅行的意义
-
----
-
-### 步骤三：配置语音和视觉
-
-在中间栏：
-
-**语音设置**
-- 选择 TTS 工作流（默认 Edge-TTS 即可）
-- 如需声音克隆，可上传参考音频
-
-**视觉设置**
-- 选择图像生成工作流（默认即可）
-- 设置图像尺寸（默认 1024x1024）
-- 选择视频模板（推荐竖屏 1080x1920）
+!!! tip "Topic Examples"
+    - Why develop a reading habit
+    - How to improve work efficiency
+    - The importance of healthy eating
+    - The meaning of travel
 
 ---
 
-### 步骤四：生成视频
+### Step 3: Configure Voice and Visuals
 
-点击右侧栏的「🎬 生成视频」按钮！
+In the middle panel:
 
-系统会显示实时进度：
-- 生成文案
-- 生成配图（每个分镜）
-- 合成语音
-- 合成视频
+**Voice Settings**
+- Select TTS workflow (default Edge-TTS works well)
+- For voice cloning, upload a reference audio file
 
-!!! info "生成时间"
-    生成一个 5 分镜的视频大约需要 2-5 分钟，具体时间取决于：LLM API 响应速度、图像生成速度、TTS 工作流类型、网络状况
-
----
-
-### 步骤五：预览视频
-
-生成完成后，视频会自动在右侧栏播放！
-
-你可以看到：
-- 📹 视频预览播放器
-- ⏱️ 视频时长
-- 📦 文件大小
-- 🎬 分镜数量
-- 📐 视频尺寸
-
-视频文件保存在 `output/` 文件夹中。
+**Visual Settings**
+- Select image generation workflow (default works well)
+- Set image dimensions (default 1024x1024)
+- Choose video template (recommend portrait 1080x1920)
 
 ---
 
-## 下一步探索
+### Step 4: Generate Video
 
-恭喜！你已经成功生成了第一个视频 🎉
+Click the「🎬 Generate Video」button in the right panel!
 
-接下来你可以：
+The system will show real-time progress:
+- Generate script
+- Generate images (for each scene)
+- Synthesize voice
+- Compose video
 
-- **调整风格** - 查看 [自定义视觉风格](../tutorials/custom-style.md) 教程
-- **克隆声音** - 查看 [使用参考音频克隆声音](../tutorials/voice-cloning.md) 教程
-- **使用 API** - 查看 [API 使用指南](../user-guide/api.md)
-- **开发模板** - 查看 [模板开发指南](../user-guide/templates.md)
+!!! info "Generation Time"
+    Generating a 5-scene video takes about 2-5 minutes, depending on: LLM API response speed, image generation speed, TTS workflow type, and network conditions
+
+---
+
+### Step 5: Preview Video
+
+Once complete, the video will automatically play in the right panel!
+
+You'll see:
+- 📹 Video preview player
+- ⏱️ Video duration
+- 📦 File size
+- 🎬 Number of scenes
+- 📐 Video dimensions
+
+The video file is saved in the `output/` folder.
+
+---
+
+## Next Steps
+
+Congratulations! You've successfully created your first video 🎉
+
+Next, you can:
+
+- **Adjust Styles** - See the [Custom Visual Style](../tutorials/custom-style.md) tutorial
+- **Clone Voices** - See the [Voice Cloning with Reference Audio](../tutorials/voice-cloning.md) tutorial
+- **Use API** - See the [API Usage Guide](../user-guide/api.md)
+- **Develop Templates** - See the [Template Development Guide](../user-guide/templates.md)
 

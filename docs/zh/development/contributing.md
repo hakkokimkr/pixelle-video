@@ -1,50 +1,50 @@
-# 贡献指南
+# Contributing
 
-感谢你对 Pixelle-Video 的贡献兴趣！
-
----
-
-## 如何贡献
-
-1. Fork 项目仓库
-2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
+Thank you for your interest in contributing to Pixelle-Video!
 
 ---
 
-## 开发设置
+## How to Contribute
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## Development Setup
 
 ```bash
-# 克隆你的 fork
+# Clone your fork
 git clone https://github.com/your-username/Pixelle-Video.git
 cd Pixelle-Video
 
-# 安装开发依赖
+# Install development dependencies
 uv sync
 
-# 运行测试
+# Run tests
 pytest
 ```
 
 ---
 
-## 代码规范
+## Code Standards
 
-- 所有代码和注释使用英文
-- 遵循 PEP 8 规范
-- 添加适当的测试
-
----
-
-## 提交 Issue
-
-遇到问题或有功能建议？请在 [GitHub Issues](https://github.com/AIDC-AI/Pixelle-Video/issues) 提交。
+- All code and comments in English
+- Follow PEP 8 standards
+- Add appropriate tests
 
 ---
 
-## 行为准则
+## Submit Issues
 
-请保持友好和尊重，我们致力于营造包容的社区环境。
+Having problems or feature suggestions? Please submit at [GitHub Issues](https://github.com/AIDC-AI/Pixelle-Video/issues).
+
+---
+
+## Code of Conduct
+
+Please be friendly and respectful. We are committed to fostering an inclusive community environment.
 

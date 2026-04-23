@@ -1,64 +1,64 @@
-# 配置说明
+# Configuration
 
-完成安装后，需要配置服务才能使用 Pixelle-Video。
+After installation, you need to configure services to use Pixelle-Video.
 
 ---
 
-## LLM 配置
+## LLM Configuration
 
-LLM（大语言模型）用于生成视频文案。
+LLM (Large Language Model) is used to generate video scripts.
 
-### 快速选择预设
+### Quick Preset Selection
 
-1. 从下拉菜单选择预设模型：
-   - 通义千问（推荐，性价比高）
+1. Select a preset model from the dropdown:
+   - Qianwen (recommended, great value)
    - GPT-4o
    - DeepSeek
-   - Ollama（本地运行，完全免费）
+   - Ollama (local, completely free)
 
-2. 系统会自动填充 `base_url` 和 `model`
+2. The system will auto-fill `base_url` and `model`
 
-3. 点击「🔑 获取 API Key」链接，注册并获取密钥
+3. Click「🔑 Get API Key」to register and obtain credentials
 
-4. 填入 API Key
-
----
-
-## 图像/视频生成配置
-
-支持两种方式：
-
-### 本地部署
-
-使用本地 ComfyUI 服务：
-
-1. 安装并启动 ComfyUI
-2. 填写 ComfyUI URL（默认 `http://127.0.0.1:8188`）
-3. 点击「测试连接」确认服务可用
-4. （可选）填写 ComfyUI API Key（从 [Comfy Platform](https://platform.comfy.org/profile/api-keys) 获取）
-
-### 云端部署（推荐）
-
-使用 RunningHub 云端服务，无需本地 GPU：
-
-1. 注册 RunningHub 账号
-2. 获取 API Key
-3. 在配置中填写 API Key
-4. 配置高级选项（可选）：
-   - **并发限制**: 设置同时执行的任务数（1-10，普通会员默认为 1）
-   - **实例类型**: 选择 24GB 或 48GB 显存机器（48GB 适合大尺寸视频生成）
+4. Enter your API Key
 
 ---
 
-## 保存配置
+## Image/Video Generation Configuration
 
-填写完所有必需的配置后，点击「保存配置」按钮。
+Two options available:
 
-配置会保存到 `config.yaml` 文件中。
+### Local Deployment
+
+Using local ComfyUI service:
+
+1. Install and start ComfyUI
+2. Enter ComfyUI URL (default `http://127.0.0.1:8188`)
+3. Click "Test Connection" to verify
+4. (Optional) Enter ComfyUI API Key (get from [Comfy Platform](https://platform.comfy.org/profile/api-keys))
+
+### Cloud Deployment (Recommended)
+
+Using RunningHub cloud service, no local GPU required:
+
+1. Register for a RunningHub account
+2. Obtain API Key
+3. Enter API Key in configuration
+4. Configure advanced options (optional):
+   - **Concurrent Limit**: Set number of simultaneous tasks (1-10, default 1 for regular members)
+   - **Instance Type**: Choose 24GB or 48GB VRAM machine (48GB for large video generation)
 
 ---
 
-## 下一步
+## Save Configuration
 
-- [快速开始](quick-start.md) - 生成你的第一个视频
+After filling in all required configuration, click the "Save Configuration" button.
+
+Configuration will be saved to `config.yaml` file.
+
+---
+
+## Next Steps
+
+- [Quick Start](quick-start.md) - Create your first video
 

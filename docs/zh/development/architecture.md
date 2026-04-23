@@ -1,54 +1,54 @@
-# 架构设计
+# Architecture
 
-Pixelle-Video 的技术架构概览。
-
----
-
-## 核心架构
-
-Pixelle-Video 采用分层架构设计：
-
-- **Web 层**: Streamlit Web 界面
-- **服务层**: 核心业务逻辑
-- **ComfyUI 层**: 图像和TTS生成
+Technical architecture overview of Pixelle-Video.
 
 ---
 
-## 主要组件
+## Core Architecture
+
+Pixelle-Video uses a layered architecture design:
+
+- **Web Layer**: Streamlit Web interface
+- **Service Layer**: Core business logic
+- **ComfyUI Layer**: Image and TTS generation
+
+---
+
+## Main Components
 
 ### PixelleVideoCore
 
-核心服务类，协调各个子服务。
+Core service class coordinating all sub-services.
 
 ### LLM Service
 
-负责调用大语言模型生成文案。
+Responsible for calling large language models to generate scripts.
 
 ### Image Service
 
-负责调用 ComfyUI 生成图像。
+Responsible for calling ComfyUI to generate images.
 
 ### TTS Service
 
-负责调用 ComfyUI 生成语音。
+Responsible for calling ComfyUI to generate speech.
 
 ### Video Generator
 
-负责合成最终视频。
+Responsible for composing the final video.
 
 ---
 
-## 技术栈
+## Tech Stack
 
-- **后端**: Python 3.10+, AsyncIO
+- **Backend**: Python 3.10+, AsyncIO
 - **Web**: Streamlit
 - **AI**: OpenAI API, ComfyUI
-- **配置**: YAML
-- **工具**: uv (包管理)
+- **Configuration**: YAML
+- **Tools**: uv (package management)
 
 ---
 
-## 更多信息
+## More Information
 
-详细的架构文档即将推出。
+Detailed architecture documentation coming soon.
 

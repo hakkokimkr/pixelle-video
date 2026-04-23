@@ -1,35 +1,35 @@
-# 声音克隆
+# Voice Cloning
 
-使用参考音频实现声音克隆功能。
-
----
-
-## 准备参考音频
-
-1. 准备一段清晰的音频文件（MP3/WAV/FLAC）
-2. 建议时长 10-30 秒
-3. 避免背景噪音
+Use reference audio to implement voice cloning functionality.
 
 ---
 
-## 使用步骤
+## Prepare Reference Audio
 
-1. 在语音设置中选择支持声音克隆的 TTS 工作流（如 Index-TTS）
-2. 上传参考音频文件
-3. 使用「预览语音」测试效果
-4. 生成视频
-
----
-
-## 注意事项
-
-- 不是所有 TTS 工作流都支持声音克隆
-- 参考音频质量会影响克隆效果
-- Edge-TTS 不支持声音克隆
+1. Prepare a clear audio file (MP3/WAV/FLAC)
+2. Recommended duration: 10-30 seconds
+3. Avoid background noise
 
 ---
 
-## 更多信息
+## Usage Steps
 
-即将推出更详细的声音克隆教程。
+1. Select a TTS workflow that supports voice cloning (e.g., Index-TTS) in voice settings
+2. Upload reference audio file
+3. Test effects with "Preview Voice"
+4. Generate video
+
+---
+
+## Notes
+
+- Not all TTS workflows support voice cloning
+- Reference audio quality affects cloning results
+- Edge-TTS does not support voice cloning
+
+---
+
+## More Information
+
+Detailed voice cloning tutorial coming soon.
 
